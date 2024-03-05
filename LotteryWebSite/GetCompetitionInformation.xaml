@@ -1,0 +1,286 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="GetCompetitionInformation" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1238,2141" sap2010:WorkflowViewState.IdRef="GetCompetitionInformation_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:uuam="clr-namespace:UiPath.UIAutomationNext.Activities.Models;assembly=UiPath.UIAutomationNext.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>System.Text.RegularExpressions</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+      <AssemblyReference>System.Text.RegularExpressions</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="GetCompetitionInformation" sap:VirtualizedContainerService.HintSize="637,2076" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: Mega-Sena - Portal Loterias | CAIXA" sap:VirtualizedContainerService.HintSize="575,1988" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="Never" ScopeGuid="a5464399-a4a7-4e76-9fc3-2046730e3141" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="541,1748" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:String" Name="CompetitionDetails" />
+              <Variable x:TypeArguments="x:String" Name="CompetitionDate" />
+              <Variable x:TypeArguments="x:String" Name="CompetitionDateRegex">
+                <Variable.Default>
+                  <Literal x:TypeArguments="x:String">\((\d{2}/\d{2}/\d{4})\)</Literal>
+                </Variable.Default>
+              </Variable>
+              <Variable x:TypeArguments="x:String" Name="CompetitionNumber" />
+              <Variable x:TypeArguments="x:String" Name="CompetitionNumberRegex">
+                <Variable.Default>
+                  <Literal x:TypeArguments="x:String" xml:space="preserve">\b(?&lt;![a-zA-Z])\b\b(\d{4})\b(?=\s*\((\d{2}/\d{2}/\d{4})\)) </Literal>
+                </Variable.Default>
+              </Variable>
+              <Variable x:TypeArguments="x:String" Name="DrawnNumbers" />
+              <Variable x:TypeArguments="x:String" Name="teste" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NGetText DisplayName="Get Text 'Resultado Concurso'" sap:VirtualizedContainerService.HintSize="479,197" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="a5464399-a4a7-4e76-9fc3-2046730e3141" TextString="[CompetitionDetails]" Version="V3">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="https://loterias.caixa.gov.br/Paginas/Mega-Sena.aspx" DesignTimeRectangle="353, 335, 303, 26" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl parentid='wp_resultados' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='wp_resultados' tag='SPAN' type='' class='ng-binding' /&gt;" Guid="482ab1d8-6769-4f5d-9f40-887a634b709e" InformativeScreenshot="3d66e9c401222ad212c392c94968a669.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Mega-Sena - Portal Loterias | CAIXA' /&gt;" SearchSteps="FuzzySelector" Version="V3" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target DesignTimeRectangle="122, 311, 534, 65" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='H2' innertext='Resultado Concurso *                     ' aaname='Resultado                      ' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='H2' innertext='Resultado Concurso *                     ' aaname='Resultado                      ' type='' class='' /&gt;" ImageBase64="" SearchSteps="FuzzySelector" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NGetText.Target>
+            </uix:NGetText>
+            <uix:NGetText DisplayName="Get Text 'Acumulou! Mega da Virada'" sap:VirtualizedContainerService.HintSize="479,197" sap2010:WorkflowViewState.IdRef="NGetText_2" ScopeIdentifier="a5464399-a4a7-4e76-9fc3-2046730e3141" TextString="[DrawnNumbers]" Version="V3">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="https://loterias.caixa.gov.br/Paginas/Mega-Sena.aspx" DesignTimeRectangle="122, 443, 933, 67" DesignTimeScaleFactor="1" ElementType="List" FullSelectorArgument="&lt;webctrl id='ulDezenas' tag='UL' visibleinnertext='*' /&gt;" FuzzySelectorArgument="&lt;webctrl id='ulDezenas' tag='UL' visibleinnertext='*' type='' class='numbers megasena' aaname='                                                      ' /&gt;" Guid="45b75a56-6e4c-461c-9fb5-77925755677f" ImageBase64="" InformativeScreenshot="f8d7dff74f132823a3af67fc103bd775.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Mega-Sena - Portal Loterias | CAIXA' /&gt;" SearchSteps="Selector" Version="V3" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target DesignTimeRectangle="122, 352, 933, 464" FullSelectorArgument="&lt;webctrl class='resultado-loteria' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl class='resultado-loteria' tag='DIV' type='' aaname='                                                                                                                                                                           ' /&gt;" SearchSteps="FuzzySelector" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NGetText.Target>
+            </uix:NGetText>
+            <ui:MultipleAssign DisplayName="Extract Competition info" sap:VirtualizedContainerService.HintSize="479,187" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
+              <ui:MultipleAssign.AssignOperations>
+                <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
+                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_1">
+                    <ui:AssignOperation.To>
+                      <OutArgument x:TypeArguments="x:String">[CompetitionDate]</OutArgument>
+                    </ui:AssignOperation.To>
+                    <ui:AssignOperation.Value>
+                      <InArgument x:TypeArguments="x:String">[System.Text.RegularExpressions.Regex.Match(CompetitionDetails, CompetitionDateRegex).Groups(1).Value]</InArgument>
+                    </ui:AssignOperation.Value>
+                  </ui:AssignOperation>
+                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_2">
+                    <ui:AssignOperation.To>
+                      <OutArgument x:TypeArguments="x:String">[CompetitionNumber]</OutArgument>
+                    </ui:AssignOperation.To>
+                    <ui:AssignOperation.Value>
+                      <InArgument x:TypeArguments="x:String">[System.Text.RegularExpressions.Regex.Match(CompetitionDetails, CompetitionNumberRegex).Groups(1).Value]</InArgument>
+                    </ui:AssignOperation.Value>
+                  </ui:AssignOperation>
+                </scg:List>
+              </ui:MultipleAssign.AssignOperations>
+            </ui:MultipleAssign>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="479,92" sap2010:WorkflowViewState.IdRef="LogMessage_5" Message="[CompetitionDate]">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:LogMessage>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="479,92" sap2010:WorkflowViewState.IdRef="LogMessage_4" Message="[DrawnNumbers]">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:LogMessage>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="479,92" sap2010:WorkflowViewState.IdRef="LogMessage_6" Message="[CompetitionNumber]">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:LogMessage>
+            <ui:UiElementExists Exists="{x:Null}" DisplayName="Element Exists 'SPAN'" sap:VirtualizedContainerService.HintSize="479,147" sap2010:WorkflowViewState.IdRef="UiElementExists_1">
+              <ui:UiElementExists.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="06627e43-5fc5-40af-b102-e6fbb64ecfa4" InformativeScreenshot="fb9bee036d24a0a7a385b2728d041567" Selector="&lt;webctrl id='titleDetalhamento' tag='H3' /&gt;">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:UiElementExists.Target>
+            </ui:UiElementExists>
+            <uix:NForEachUiElement DisplayName="For Each UiElement" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='CurrentElement'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column0' attr='fulltext'&gt;&lt;webctrl tag='div' idx='3' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='h3' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="479,92" sap2010:WorkflowViewState.IdRef="NForEachUiElement_2" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="a5464399-a4a7-4e76-9fc3-2046730e3141" Version="V3">
+              <uix:NForEachUiElement.Body>
+                <ActivityAction x:TypeArguments="x:Int32">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="416,197" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="354,110" sap2010:WorkflowViewState.IdRef="MessageBox_2" Text="[CurrentElement.ToString()]" />
+                  </Sequence>
+                </ActivityAction>
+              </uix:NForEachUiElement.Body>
+              <uix:NForEachUiElement.Filter>
+                <uuam:FilterArgument LogicalOperator="And">
+                  <uuam:FilterArgument.Filters>
+                    <scg:List x:TypeArguments="uuam:FilterEntryArgument" Capacity="1">
+                      <uuam:FilterEntryArgument Criterion="Column0" Operator="Equals" Value="Detalhamento" />
+                    </scg:List>
+                  </uuam:FilterArgument.Filters>
+                </uuam:FilterArgument>
+              </uix:NForEachUiElement.Filter>
+              <uix:NForEachUiElement.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="8, 243, 1903, 0" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='wp_resultados' tag='DIV' /&gt;" Guid="2a5afed5-2773-485d-b5d3-6f74fa8218ea" InformativeScreenshot="3a5e31b34c2409b2ee86f24a47ed8e23.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Mega-Sena - Portal Loterias | CAIXA' /&gt;" SearchSteps="Selector" Version="V3" Visibility="Interactive" />
+              </uix:NForEachUiElement.Target>
+              <uix:NForEachUiElement.Variables>
+                <Variable x:TypeArguments="ui:UiElement" Name="CurrentElement" />
+                <Variable x:TypeArguments="x:String" Name="CurrentElement_Label" />
+                <Variable x:TypeArguments="x:String" Name="WinnersDetails" />
+              </uix:NForEachUiElement.Variables>
+              <uix:NForEachUiElement.VariablesMetadata>
+                <scg:List x:TypeArguments="uuam:VariableMetadata" x:Key="Column0" Capacity="4">
+                  <uuam:VariableMetadata Name="CurrentElement" Type="ui:UiElement" />
+                  <uuam:VariableMetadata Name="CurrentElement_Label" Type="x:String" />
+                </scg:List>
+                <scg:List x:TypeArguments="uuam:VariableMetadata" x:Key="Column1" Capacity="4">
+                  <uuam:VariableMetadata Name="WinnersDetails" Type="x:String" />
+                </scg:List>
+              </uix:NForEachUiElement.VariablesMetadata>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NForEachUiElement>
+            <ui:Comment sap:VirtualizedContainerService.HintSize="479,210" sap2010:WorkflowViewState.IdRef="Comment_1" Text="// GET ATRIBUTE ESTA PEGANDO O TEXTO &quot;NAO HOUVE GANHAHDORES&quot;  SE RETORNAR O TEXTO ELE EXISTE, SIGNIFICA QUE NÃO TEM GANHADOR E TEM QUE IR PARA O PROXIMO REGISTRO&#xD;&#xA;SE TEM, ELE N VAI RETORNAR NADA, AI PRECISA PROSSEGUIR COM OS OUTROS PASSOS" />
+            <uix:NGetAttributeGeneric x:TypeArguments="x:String" Attribute="text" ContinueOnError="True" DisplayName="Get Attribute 'Não houve ganhadores'" sap:VirtualizedContainerService.HintSize="479,247" sap2010:WorkflowViewState.IdRef="NGetAttributeGeneric`1_3" Result="[teste]" ScopeIdentifier="a5464399-a4a7-4e76-9fc3-2046730e3141" Timeout="1" Version="V3">
+              <uix:NGetAttributeGeneric.Target>
+                <uix:TargetAnchorable BrowserURL="https://loterias.caixa.gov.br/Paginas/Mega-Sena.aspx" DesignTimeRectangle="1190, 643, 145, 14" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Não houve ganhadores' parentid='wp_resultados' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Não houve ganhadores' parentid='wp_resultados' tag='SPAN' type='' class='' check:innerText='Não houve ganhadores' /&gt;" Guid="26053a54-89cd-4984-bc13-038d281ea57a" InformativeScreenshot="91106a95ab4979a3ab58e6722646efbf.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Mega-Sena - Portal Loterias | CAIXA' /&gt;" SearchSteps="FuzzySelector" Version="V3" Visibility="Interactive" />
+              </uix:NGetAttributeGeneric.Target>
+            </uix:NGetAttributeGeneric>
+            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="479,108" sap2010:WorkflowViewState.IdRef="MessageBox_3" Text="[teste]" />
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, -8, 1936, 1056" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAE0SURBVDhPY9DMX/6fEjzIDLCpWf//28/f/5FB/5aL/7ULlv5f2231//MsBjg+PlHlv2nRXEwXzN5zDaoVAj5+/fl/1QRvFM3nJ8n+NyuaA1aPYYBF5dr/n77/gmqHgJ9nm+Car06R/G9VPBOuHmsYTN52CaoVAv79+vT/yyKR/7emiv63L5mKoharAabla/7fe3j3//dXF+D44d7y/26l/RhqsRoQVdP6/9bWrP/3tueA8d0d+f/blu/FUAfCGAZEVtb/fzmDExFoc1j//7676v8HYGCaAV2Grh7FgJiqmv+vZ7AjaWb7//v+OmhI/P8/dccVFM0gDDcgoboSRfO7mSz/N66bDNUKAZ+BsWNZtQ7TgJTq8v9vZ7LCNYPYSdUV4MAEOR0ZzN17HdMASvBAG7D8PwB1p4n8BSiUXgAAAABJRU5ErkJggg==" InformativeScreenshot="2f4711572cc51fcec5b875c24dab7b13.jpg" Selector="&lt;html app='chrome.exe' title='Mega-Sena - Portal Loterias | CAIXA' /&gt;" Title="Mega-Sena - Portal Loterias | CAIXA" Url="https://loterias.caixa.gov.br/Paginas/Mega-Sena.aspx" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
